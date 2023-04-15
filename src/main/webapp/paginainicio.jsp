@@ -12,7 +12,17 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Wenas!</h1>
-        <h2>Hola <%= request.getAttribute("name")%></h2>
+        <h1>Pagina de Inicio</h1>
+        <h2>Lista de Nombres</h2>
+        <%= request.getAttribute("nomina") %>
+        <form method="POST">
+            <p>
+                <label for"nombre">Nombre</label>
+                <input type="text" id ="nombre" name="nombre" placeholder="Introduzca el nombre/"/>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
     </body>
 </html>
